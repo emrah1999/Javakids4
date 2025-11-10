@@ -18,5 +18,6 @@ public class For2Main {
             System.out.println("Hello"+i);
 
         }
+
     }
 }
