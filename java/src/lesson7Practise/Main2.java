@@ -19,6 +19,7 @@ public class Main2 {
             }
             eded/=10;
         }
+        System.out.println("--------------------------------");
 
         System.out.println("Max+Min  "+(max+min));
 
