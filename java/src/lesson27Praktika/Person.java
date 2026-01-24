@@ -3,7 +3,9 @@ package lesson27Praktika;
 public class Person {
     String name;
     String surname;
-
+    public Person(){
+        System.out.println("Person created");
+    }
 
     public Person(String n){
         this.name=n;
