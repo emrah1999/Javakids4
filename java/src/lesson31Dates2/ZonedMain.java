@@ -41,6 +41,8 @@ public class ZonedMain {
         LocalDate date = LocalDate.now();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy", locale);
-
+        LocalDate bir=LocalDate.of(2024, 6, 1);
+        LocalDate iki=LocalDate.of(2024, 6, 1);
+        System.out.println(bir.isAfter(iki));
     }
 }
