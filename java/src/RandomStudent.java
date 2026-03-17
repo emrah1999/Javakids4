@@ -5,7 +5,7 @@ import java.util.Random;
 public class RandomStudent {
     public static void main(String[] args) {
         List<String> students=new ArrayList<>();
-        students.add("Elman");
+//        students.add("Elman");
         students.add("Nuray");
         students.add("Nihat");
         students.add("Jasmin");
