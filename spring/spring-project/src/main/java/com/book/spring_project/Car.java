@@ -12,4 +12,9 @@ public class Car {  //bean car
         this.brand="BMW";
         this.model="X5";
     }
+
+    public static void main(String[] args) {
+        Car car = new Car();
+        System.out.println(car.brand+" "+car.model);
+    }
 }

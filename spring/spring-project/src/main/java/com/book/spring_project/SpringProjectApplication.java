@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import java.io.FileWriter;
+
 @SpringBootApplication
 public class SpringProjectApplication {
 
@@ -17,6 +19,12 @@ public class SpringProjectApplication {
 
 		Car car=context.getBean(Car.class);
 		System.out.println(car.brand+" "+car.model);
+
+//		User user=context.getBean(User.class);
+
+		Book book=context.getBean(Book.class);
+		System.out.println(book.title);
+
 	}
 
 }
