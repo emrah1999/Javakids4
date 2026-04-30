@@ -1,5 +1,6 @@
 package com.book.spring_project;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
