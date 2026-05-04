@@ -1,5 +1,9 @@
 package com.book.spring_project;
 
+import com.book.spring_project.newBean.CarService;
+import com.book.spring_project.newBean.Computer;
+import com.book.spring_project.newBean.Engine;
+import com.book.spring_project.newBean.Library;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -18,18 +22,43 @@ public class SpringProjectApplication {
 			System.out.println(bean);
 		}
 
-		Car car=context.getBean(Car.class);
+		Computer computer=context.getBean("computer",Computer.class);
+		Computer computer1=(Computer) context.getBean("computer1");
+		Computer computer2=(Computer) context.getBean("computer2");
+		Computer computer3=(Computer) context.getBean("computer3");
 
-		Car car2=context.getBean(Car.class);
-		Car car3=context.getBean(Car.class);
-		Car car4=context.getBean(Car.class);
+		Library library=context.getBean(Library.class);
+//		Engine engine=context.getBean(Engine.class);
+//		Engine engine2=context.getBean(Engine.class);
+//		Engine engine3=context.getBean(Engine.class);
 
-//		Person person=context.getBean(Person.class);
+		System.out.println(library.name+" "+library.location);
 
-		System.out.println(car==car2);
+		System.out.println(computer.brand);
+		System.out.println(computer1.brand);
+		System.out.println(computer2.brand);
+		System.out.println(computer3.brand);
 
-		User user= (User) context.getBean("newUserBean");
-		System.out.println(user.name);
+		CarService carService=context.getBean(CarService.class);
+
+		carService.startCar();
+		carService.startCar();
+		carService.startCar();
+
+
+
+//		Car car=context.getBean(Car.class);
+//
+//		Car car2=context.getBean(Car.class);
+//		Car car3=context.getBean(Car.class);
+//		Car car4=context.getBean(Car.class);
+//
+////		Person person=context.getBean(Person.class);
+//
+//		System.out.println(car==car2);
+//
+//		User user= (User) context.getBean("newUserBean");
+//		System.out.println(user.name);
 
 
 
