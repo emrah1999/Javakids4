@@ -1,9 +1,6 @@
 package com.book.spring_project;
 
-import com.book.spring_project.newBean.CarService;
-import com.book.spring_project.newBean.Computer;
-import com.book.spring_project.newBean.Engine;
-import com.book.spring_project.newBean.Library;
+import com.book.spring_project.newBean.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -26,6 +23,14 @@ public class SpringProjectApplication {
 		Computer computer1=(Computer) context.getBean("computer1");
 		Computer computer2=(Computer) context.getBean("computer2");
 		Computer computer3=(Computer) context.getBean("computer3");
+
+
+		Student student=context.getBean("student",Student.class);
+		Student student1=context.getBean("student1",Student.class);
+		Student student2=context.getBean("student2",Student.class);
+		System.out.println(student.name);
+		System.out.println(student1.name);
+		System.out.println(student2.name);
 
 		Library library=context.getBean(Library.class);
 //		Engine engine=context.getBean(Engine.class);

@@ -2,7 +2,9 @@ package com.book.spring_project.newBean;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public class Library {
     public String name;
     public String location;
