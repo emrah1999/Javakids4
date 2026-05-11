@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class Main {
+
+public class Main2 {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(SpringProjectApplication.class, args);
         String[] beanNames = context.getBeanDefinitionNames();
@@ -14,21 +15,10 @@ public class Main {
             System.out.println(bean);
         }
 
-        Client client=context.getBean(Client.class);
-        System.out.println(client.name);
+        Animal animal=context.getBean(Animal.class);
+        System.out.println(animal.name);
 
-        System.out.println(client.address.name);
-        System.out.println("Client "+client.school.name);
-
-
-        ConstructorInjection constructorInjection=context.getBean(ConstructorInjection.class);
-
-        constructorInjection.printInfo();
-
-        School school=context.getBean(School.class);
-        System.out.println("Orjinal " +school.name);
-
-
-
+        Zoopark zoopark=context.getBean(Zoopark.class);
+        System.out.println(zoopark.animal.name);
     }
 }

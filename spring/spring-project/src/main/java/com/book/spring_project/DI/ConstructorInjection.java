@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor
 public class ConstructorInjection {
 
     private final Client client;
@@ -12,6 +11,12 @@ public class ConstructorInjection {
     private final School school;
 
     private final Address address;
+
+    public ConstructorInjection(Client client, School school, Address address) {
+        this.client = client;
+        this.school = school;
+        this.address = address;
+    }
 
     public void printInfo() {
         System.out.println("Client Name: " + client.name);

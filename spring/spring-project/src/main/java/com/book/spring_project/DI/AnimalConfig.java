@@ -5,11 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 @Configuration
-public class Config {
+public class AnimalConfig {
     @Bean
-    public School school2() {
-        return new School("ADA University");
+    @Primary
+    public Animal animal2(){
+        return new Animal("Tiger");
     }
-
-
 }
