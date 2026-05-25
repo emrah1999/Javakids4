@@ -1,0 +1,10 @@
+2026-05-25T21:37:41.037+04:00  INFO 20684 --- [spring-project] [main] c.book.spring_project.application.Main   : Starting Main using Java 23.0.1 with PID 20684 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25T21:37:41.047+04:00  INFO 20684 --- [spring-project] [main] c.book.spring_project.application.Main   : The following 1 profile is active: "prod"
+2026-05-25T21:37:43.748+04:00  INFO 20684 --- [spring-project] [main] c.book.spring_project.application.Main   : Started Main in 4.234 seconds (process running for 5.929)
+2026-05-25T21:37:43.769+04:00  INFO 20684 --- [spring-project] [main] c.book.spring_project.application.Main   : Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25T21:39:03.775+04:00  INFO 9076 --- [spring-project] [main] c.book.spring_project.application.Main   : Starting Main using Java 23.0.1 with PID 9076 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25T21:39:03.785+04:00  INFO 9076 --- [spring-project] [main] c.book.spring_project.application.Main   : The following 1 profile is active: "prod"
+2026-05-25T21:39:06.560+04:00  INFO 9076 --- [spring-project] [main] c.book.spring_project.application.Main   : Started Main in 4.732 seconds (process running for 6.921)
+2026-05-25T21:39:06.615+04:00  INFO 9076 --- [spring-project] [main] c.book.spring_project.application.Main   : Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25T21:39:06.616+04:00  WARN 9076 --- [spring-project] [main] c.book.spring_project.application.Main   : Salam warning
+2026-05-25T21:39:06.616+04:00 ERROR 9076 --- [spring-project] [main] c.book.spring_project.application.Main   : Salam error

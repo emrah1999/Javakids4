@@ -1,0 +1,72 @@
+2026-05-25 21:41:50 INFO  c.b.spring_project.application.Main - Starting Main using Java 23.0.1 with PID 20700 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25 21:41:50 INFO  c.b.spring_project.application.Main - The following 1 profile is active: "prod"
+2026-05-25 21:41:52 INFO  c.b.spring_project.application.Main - Started Main in 5.236 seconds (process running for 7.209)
+2026-05-25 21:41:52 INFO  c.b.spring_project.application.Main - Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25 21:41:52 WARN  c.b.spring_project.application.Main - Salam warning
+2026-05-25 21:41:52 ERROR c.b.spring_project.application.Main - Salam error
+2026-05-25 21:51:41 INFO  c.b.spring_project.application.Main - Starting Main using Java 23.0.1 with PID 13720 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25 21:51:41 INFO  c.b.spring_project.application.Main - The following 1 profile is active: "prod"
+2026-05-25 21:51:44 INFO  c.b.spring_project.application.Main - Started Main in 5.024 seconds (process running for 6.731)
+2026-05-25 21:51:44 INFO  c.b.spring_project.application.Main - Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25 21:51:44 WARN  c.b.spring_project.application.Main - Salam warning
+2026-05-25 21:51:44 ERROR c.b.spring_project.application.Main - Salam error
+2026-05-25 21:52:47 INFO  c.b.spring_project.application.Main - Starting Main using Java 23.0.1 with PID 29164 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25 21:52:47 INFO  c.b.spring_project.application.Main - The following 1 profile is active: "prod"
+2026-05-25 21:52:49 INFO  c.b.spring_project.application.Main - Started Main in 4.037 seconds (process running for 5.77)
+2026-05-25 21:52:49 INFO  c.b.spring_project.application.Main - Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25 21:52:49 WARN  c.b.spring_project.application.Main - Salam warning
+2026-05-25 21:52:49 ERROR c.b.spring_project.application.Main - Salam error
+2026-05-25 21:58:58 INFO  c.b.spring_project.application.Main - Starting Main using Java 23.0.1 with PID 8368 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25 21:58:58 INFO  c.b.spring_project.application.Main - The following 1 profile is active: "prod"
+2026-05-25 21:59:03 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-25 21:59:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-25 21:59:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-25 21:59:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-25 21:59:04 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5622 ms
+2026-05-25 21:59:06 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-25 21:59:06 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-25 21:59:06 INFO  c.b.spring_project.application.Main - Started Main in 10.65 seconds (process running for 13.259)
+2026-05-25 21:59:06 INFO  c.b.spring_project.application.Main - Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25 21:59:06 WARN  c.b.spring_project.application.Main - Salam warning
+2026-05-25 21:59:06 ERROR c.b.spring_project.application.Main - Salam error
+2026-05-25 21:59:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25 21:59:54 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-25 21:59:54 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-25 22:02:49 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-25 22:02:49 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-25 22:02:59 INFO  c.b.spring_project.application.Main - Starting Main using Java 23.0.1 with PID 26236 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25 22:02:59 INFO  c.b.spring_project.application.Main - The following 1 profile is active: "prod"
+2026-05-25 22:03:04 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-25 22:03:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-25 22:03:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-25 22:03:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-25 22:03:04 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4345 ms
+2026-05-25 22:03:05 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-25 22:03:05 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-25 22:03:05 INFO  c.b.spring_project.application.Main - Started Main in 7.46 seconds (process running for 9.043)
+2026-05-25 22:03:05 INFO  c.b.spring_project.application.Main - Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25 22:03:05 WARN  c.b.spring_project.application.Main - Salam warning
+2026-05-25 22:03:05 ERROR c.b.spring_project.application.Main - Salam error
+2026-05-25 22:03:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25 22:03:11 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-25 22:03:11 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-25 22:03:20 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-25 22:03:20 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-25 22:03:49 INFO  c.b.spring_project.application.Main - Starting Main using Java 23.0.1 with PID 31332 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\spring-project)
+2026-05-25 22:03:49 INFO  c.b.spring_project.application.Main - The following 1 profile is active: "prod"
+2026-05-25 22:03:54 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-25 22:03:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-25 22:03:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-25 22:03:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-25 22:03:54 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4754 ms
+2026-05-25 22:03:56 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-25 22:03:56 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-25 22:03:56 INFO  c.b.spring_project.application.Main - Started Main in 9.184 seconds (process running for 11.311)
+2026-05-25 22:03:56 INFO  c.b.spring_project.application.Main - Mail Properties: MailProperties{host='smtp.gmail.com', port=587, username='emrah@gmail.com', password='123456', from='java@developia.az'}
+2026-05-25 22:03:56 WARN  c.b.spring_project.application.Main - Salam warning
+2026-05-25 22:03:56 ERROR c.b.spring_project.application.Main - Salam error
+2026-05-25 22:04:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25 22:04:12 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-25 22:04:12 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2026-05-25 22:05:52 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-25 22:05:52 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
