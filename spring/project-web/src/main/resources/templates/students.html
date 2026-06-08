@@ -1,0 +1,34 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<table style="margin-bottom:30px">
+    <tr>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Əməliyyat</th>
+    </tr>
+    <tr th:each="s : ${students}">
+        <td th:text="${s.id}"></td>
+        <td th:text="${s.name}"></td>
+        <td th:text="${s.surname}"></td>
+        <td>
+            <a th:href="@{/delete(id=${s.id})}">
+                Sil
+            </a>
+        </td>
+    </tr>
+</table>
+
+<form action="/add"
+      method="post">
+    <input name="name"
+           placeholder="Ad"/>
+    <input name="surname"
+           placeholder="Soyad"/>
+    <button type="submit">
+        Əlavə et
+    </button>
+</form>
+
+</body>
+</html>

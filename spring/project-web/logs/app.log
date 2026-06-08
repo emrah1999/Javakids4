@@ -1,180 +1,75 @@
-2026-06-01 21:37:11 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 22412 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 21:37:11 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 21:37:16 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 21:37:16 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:37:16 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 21:37:16 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 21:37:16 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4092 ms
-2026-06-01 21:37:17 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:37:17 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-06-01 21:37:17 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 8.93 seconds (process running for 11.046)
-2026-06-01 21:41:49 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-01 21:41:49 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-06-01 21:42:10 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 13528 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 21:42:10 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 21:42:13 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 21:42:13 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:42:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 21:42:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 21:42:13 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2931 ms
-2026-06-01 21:42:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:42:14 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-06-01 21:42:14 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 6.673 seconds (process running for 8.458)
-2026-06-01 21:42:56 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-01 21:42:56 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-06-01 21:43:10 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 27756 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 21:43:10 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 21:43:13 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 21:43:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:43:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 21:43:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 21:43:14 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3412 ms
-2026-06-01 21:43:15 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:43:15 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-06-01 21:43:15 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 7.288 seconds (process running for 9.104)
-2026-06-01 21:56:32 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-01 21:56:32 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-06-01 21:56:42 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 22352 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 21:56:42 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 21:56:46 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 21:56:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:56:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 21:56:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 21:56:46 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3032 ms
-2026-06-01 21:56:46 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexRestController' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\controller\IndexRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.web.project.model.User' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2026-06-01 21:56:46 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-06-01 21:56:46 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-06-01 21:56:46 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.web.project.controller.IndexRestController required a bean of type 'com.web.project.model.User' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.web.project.model.User' in your configuration.
-
-2026-06-01 21:56:57 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 17036 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 21:56:57 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 21:56:59 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 21:56:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:56:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 21:56:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 21:56:59 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1787 ms
-2026-06-01 21:57:00 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexRestController' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\controller\IndexRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.web.project.model.User' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2026-06-01 21:57:00 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-06-01 21:57:00 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-06-01 21:57:00 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.web.project.controller.IndexRestController required a bean of type 'com.web.project.model.User' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.web.project.model.User' in your configuration.
-
-2026-06-01 21:58:12 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 20820 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 21:58:12 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 21:58:14 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 21:58:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 21:58:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 21:58:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 21:58:14 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2205 ms
-2026-06-01 21:58:14 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexRestController' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\controller\IndexRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'user' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\model\User.class]: Failed to instantiate [com.web.project.model.User]: No default constructor found
-2026-06-01 21:58:14 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-06-01 21:58:14 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-06-01 21:58:14 ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexRestController' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\controller\IndexRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'user' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\model\User.class]: Failed to instantiate [com.web.project.model.User]: No default constructor found
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
-	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
-	at com.web.project.ProjectApplication.main(ProjectApplication.java:10)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'user' defined in file [C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes\com\web\project\model\User.class]: Failed to instantiate [com.web.project.model.User]: No default constructor found
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1344)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1231)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 21 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.web.project.model.User]: No default constructor found
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:102)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1338)
-	... 33 common frames omitted
-Caused by: java.lang.NoSuchMethodException: com.web.project.model.User.<init>()
-	at java.base/java.lang.Class.getConstructor0(Class.java:3833)
-	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:3004)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:98)
-	... 34 common frames omitted
-2026-06-01 22:02:14 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 21552 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 22:02:14 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 22:02:17 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 22:02:17 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 22:02:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 22:02:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 22:02:17 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2858 ms
-2026-06-01 22:02:18 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-06-01 22:02:18 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-06-01 22:02:18 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 7.05 seconds (process running for 9.023)
-2026-06-01 22:02:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-01 22:02:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-06-01 22:02:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2026-06-01 22:04:39 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-01 22:04:39 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-06-01 22:05:02 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 4136 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
-2026-06-01 22:05:02 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
-2026-06-01 22:05:07 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-06-01 22:05:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-06-01 22:05:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-06-01 22:05:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-01 22:05:07 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4905 ms
-2026-06-01 22:05:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-06-01 22:05:09 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-06-01 22:05:09 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 10.586 seconds (process running for 14.982)
-2026-06-01 22:05:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-01 22:05:13 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-06-01 22:05:13 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
-2026-06-01 22:08:58 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-01 22:08:58 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 21:34:41 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 4164 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
+2026-06-08 21:34:41 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 21:34:49 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-08 21:34:49 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:34:49 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 21:34:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 21:34:50 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 8081 ms
+2026-06-08 21:34:53 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:34:53 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-08 21:34:53 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 14.885 seconds (process running for 17.349)
+2026-06-08 21:34:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 21:34:53 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 21:34:53 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-06-08 21:35:53 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 21:35:53 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 21:41:53 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 1620 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
+2026-06-08 21:41:53 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 21:41:58 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-08 21:41:58 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:41:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 21:41:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 21:41:59 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4836 ms
+2026-06-08 21:42:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:42:00 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-08 21:42:00 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 8.76 seconds (process running for 11.188)
+2026-06-08 21:42:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 21:42:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 21:42:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2026-06-08 21:49:27 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 21:49:27 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 21:49:40 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 7936 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
+2026-06-08 21:49:40 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 21:49:44 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-08 21:49:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:49:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 21:49:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 21:49:45 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3765 ms
+2026-06-08 21:49:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:49:46 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-08 21:49:46 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 8.578 seconds (process running for 10.816)
+2026-06-08 21:49:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 21:49:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 21:49:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-06-08 21:50:23 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 21:50:23 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 21:50:31 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 5668 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
+2026-06-08 21:50:31 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 21:50:35 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-08 21:50:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:50:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 21:50:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 21:50:35 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4132 ms
+2026-06-08 21:50:37 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:50:37 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-08 21:50:37 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 9.772 seconds (process running for 11.609)
+2026-06-08 21:50:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 21:50:37 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 21:50:37 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-06-08 21:52:39 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 21:52:39 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 21:52:53 INFO  com.web.project.ProjectApplication - Starting ProjectApplication using Java 23.0.1 with PID 25924 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\project-web)
+2026-06-08 21:52:53 INFO  com.web.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 21:52:58 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-08 21:52:58 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:52:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 21:52:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 21:52:58 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4172 ms
+2026-06-08 21:52:59 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-08 21:53:00 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-08 21:53:00 INFO  com.web.project.ProjectApplication - Started ProjectApplication in 8.936 seconds (process running for 10.845)
+2026-06-08 21:53:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 21:53:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 21:53:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-06-08 22:05:54 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 22:05:54 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete

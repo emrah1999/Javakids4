@@ -5,6 +5,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class IndexRestController {
@@ -17,5 +20,13 @@ public class IndexRestController {
                 .username("nihat")
                 .email("nihat@Mail.ru").build();
         return user1;
+    }
+
+    @GetMapping("/users")
+    public List<User> users(){
+        List<User> users=new ArrayList<>();
+        users.add(User.builder().fullName("Teymur").password("2323").email("tey@mail.ri").build());
+        users.add(User.builder().fullName("Teymur2").password("345").email("tey3@mail.ri").build());
+        return users;
     }
 }
