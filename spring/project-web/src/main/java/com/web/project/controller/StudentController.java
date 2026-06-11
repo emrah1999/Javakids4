@@ -19,7 +19,7 @@ public class StudentController {
             )
     );
 
-    @GetMapping("/students")
+    @GetMapping("/students-list")
     public String getStudents(Model model) {
         model.addAttribute("students", students);
         return "students";
