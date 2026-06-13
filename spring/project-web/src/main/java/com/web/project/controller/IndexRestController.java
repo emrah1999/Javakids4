@@ -29,4 +29,9 @@ public class IndexRestController {
         users.add(User.builder().fullName("Teymur2").password("345").email("tey3@mail.ri").build());
         return users;
     }
+
+    @GetMapping("/index")
+    public String index(){
+        return "index";
+    }
 }

@@ -25,13 +25,18 @@ public class StudentController {
         return "students";
     }
 
+    @GetMapping("/students-add")
+    public String studentsAdd() {
+        return "students-add";
+    }
+
     @GetMapping("/delete")
     public String deleteStudent(
             Long id) {
         students.removeIf(
                 s -> s.getId().equals(id)
         );
-        return "redirect:/students";
+        return "redirect:/students-list";
     }
 
     @PostMapping("/add")
@@ -44,7 +49,7 @@ public class StudentController {
                 new Student(id, name,
                         surname)
         );
-        return "redirect:/students";
+        return "redirect:/students-list";
     }
 
 

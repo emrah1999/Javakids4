@@ -7,10 +7,10 @@ public class RandomStudent {
         List<String> students=new ArrayList<>();
 //        students.add("Elman");
         students.add("Nuray");
-        students.add("Nihat");
-        students.add("Jasmin");
+//        students.add("Nihat");
+//        students.add("Jasmin");
         students.add("Sevin");
-        students.add("Ibrahim");
+//        students.add("Ibrahim");
         students.add("Deniz");
         students.add("Arif");
         students.add("Teymur");
