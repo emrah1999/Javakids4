@@ -22,7 +22,7 @@ public class IndexRestController {
         return user1;
     }
 
-    @GetMapping("/users")
+    @GetMapping("/users/list")
     public List<User> users(){
         List<User> users=new ArrayList<>();
         users.add(User.builder().fullName("Teymur").password("2323").email("tey@mail.ri").build());
