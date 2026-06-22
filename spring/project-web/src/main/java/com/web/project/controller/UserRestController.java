@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/users")
 public class UserRestController {
     private final List<User> users=new ArrayList<>();
     public UserRestController(){
@@ -14,12 +15,12 @@ public class UserRestController {
         users.add(User.builder().fullName("Teymur2").password("345").email("tey3@mail.ri").build());
 
     }
-    @GetMapping("/users-list")
+    @GetMapping
     public List<User> users(){
         return users;
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/{id}")
     public User user(@PathVariable Integer id){
         List<User> users=new ArrayList<>();
         users.add(User.builder().fullName("Teymur").password("2323").email("tey@mail.ri").build());
