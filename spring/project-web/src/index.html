@@ -1,0 +1,16 @@
+<html>
+<script>
+
+   fetch("http://localhost:8080/api/users", {
+ method: "POST",
+ body: JSON.stringify({
+ name: "Ali",
+ surname: "Aliyev"
+ }),
+ headers: {
+ "Content-Type": "application/json"
+ }
+ });
+
+</script>
+</html>

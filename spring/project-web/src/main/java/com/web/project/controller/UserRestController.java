@@ -45,7 +45,7 @@ public class UserRestController {
         return "Search result for: "+name+" "+surname+" "+age;
     }
 
-    @PostMapping("/add-user")
+    @PostMapping
     public String addUser(@RequestBody User user){
         users.add(user);
         return "User added successfully";
