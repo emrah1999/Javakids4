@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequiredArgsConstructor
 public class FileRestController {
     private final FileUploadService fileUploadService;
-    @PostMapping
+    @PostMapping(consumes = "multipart/form-data")
     public String uploadFile(@RequestParam MultipartFile file) throws Exception {
         return fileUploadService.upload(file);
     }

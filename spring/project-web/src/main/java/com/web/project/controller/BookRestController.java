@@ -34,7 +34,7 @@ public class BookRestController {
         bookService.deleteBook(id);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping(value = "/{id}" , produces = "application/xml")
     public Book getBookById(@PathVariable Long id) {
         return bookService.getBookById(id);
     }
