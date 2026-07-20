@@ -1,9 +1,6 @@
 package com.web.project.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -21,4 +18,18 @@ public class ComputersEntity {
     private Double price;
 
     private Integer quantity;
+
+    @Column(unique = true, nullable = false)
+    private String barcode;
+
+    private Long userId; //user_id
+
+    @Transient
+    private Long userCount;
+
+    @Lob
+    private String description;
+
+    @Enumerated(EnumType.STRING)
+    private Type type;
 }

@@ -25,4 +25,17 @@ public class ComputerRestController {
         return computerService.getAll();
     }
 
+    @PutMapping("/{id}")
+    public void updateComputer(@PathVariable Long id,@RequestBody ComputersEntity computersEntity){
+        computerService.update(id,computersEntity);
+    }
+
+    @GetMapping("/{id}")
+    public ComputersEntity getComputerById(@PathVariable Long id){
+        return computerService.getById(id);
+    }
+    @DeleteMapping("/{id}")
+    public void deleteComputer(@PathVariable Long id){
+        computerService.delete(id);
+    }
 }
