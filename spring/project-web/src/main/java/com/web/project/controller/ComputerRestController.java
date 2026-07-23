@@ -25,6 +25,25 @@ public class ComputerRestController {
         return computerService.getAll();
     }
 
+    @GetMapping("/search/brand")
+    public List<ComputersEntity> searchComputerName(@RequestParam String brand) {
+        return computerService.searchComputerBrand(brand);
+    }
+    @GetMapping("/search/brand-count")
+    public Long searchComputerBrandCount(@RequestParam String brand) {
+        return computerService.searchComputerBrandCount(brand);
+    }
+
+    @GetMapping("/search/model")
+    public List<ComputersEntity> searchComputerModel(@RequestParam String model) {
+        return computerService.searchComputerModel(model);
+    }
+
+    @GetMapping("/search/brand/model")
+    public List<ComputersEntity> searchComputerBrandAndModel(@RequestParam String brand,@RequestParam String model) {
+        return computerService.searchComputerBrandAdnModel(brand,model);
+    }
+
     @PutMapping("/{id}")
     public void updateComputer(@PathVariable Long id,@RequestBody ComputersEntity computersEntity){
         computerService.update(id,computersEntity);

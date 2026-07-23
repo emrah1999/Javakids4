@@ -18,10 +18,25 @@ public class ComputerService {
 
     }
 
+    public List<ComputersEntity> searchComputerBrand(String brand){
+        return computerRepository.findByBrandIgnoreCaseOrderByIdDesc(brand);
+    }
+    public Long searchComputerBrandCount(String brand){
+        return computerRepository.countByBrandIgnoreCase(brand);
+    }
+    public List<ComputersEntity> searchComputerModel(String model){
+        return computerRepository.findByModelContainingIgnoreCase(model);
+    }
+    public List<ComputersEntity> searchComputerBrandAdnModel(String brand,String model){
+//        return computerRepository.findByPriceGreaterThan(10D);
+        return computerRepository.findByPriceBetween(10D,20D);
+//        return computerRepository.findByBrandAndModel(brand,model);
+    }
 
     public List<ComputersEntity> getAll(){
         return computerRepository.findAll();
     }
+
 
     public void update(Long id, ComputersEntity request){
 //        ComputersEntity existingComputer=computerRepository.findById(id).
