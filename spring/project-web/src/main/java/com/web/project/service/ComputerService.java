@@ -27,6 +27,12 @@ public class ComputerService {
     public List<ComputersEntity> searchComputerModel(String model){
         return computerRepository.findByModelContainingIgnoreCase(model);
     }
+    public List<ComputersEntity> searchComputerModelNative(String model){
+        return computerRepository.findByModel2(model);
+    }
+    public List<ComputersEntity> searchComputerModelLike(String model){
+        return computerRepository.findByModelContaining2(model);
+    }
     public List<ComputersEntity> searchComputerBrandAdnModel(String brand,String model){
 //        return computerRepository.findByPriceGreaterThan(10D);
         return computerRepository.findByPriceBetween(10D,20D);

@@ -38,6 +38,14 @@ public class ComputerRestController {
     public List<ComputersEntity> searchComputerModel(@RequestParam String model) {
         return computerService.searchComputerModel(model);
     }
+    @GetMapping("/search/model/like")
+    public List<ComputersEntity> searchComputerModelLike(@RequestParam String model) {
+        return computerService.searchComputerModelLike(model);
+    }
+    @GetMapping("/search/model/native")
+    public List<ComputersEntity> searchComputerModelNative(@RequestParam String model) {
+        return computerService.searchComputerModelNative(model);
+    }
 
     @GetMapping("/search/brand/model")
     public List<ComputersEntity> searchComputerBrandAndModel(@RequestParam String brand,@RequestParam String model) {

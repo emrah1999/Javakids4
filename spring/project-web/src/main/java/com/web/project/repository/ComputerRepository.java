@@ -3,12 +3,22 @@ package com.web.project.repository;
 import com.web.project.entity.ComputersEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 public interface ComputerRepository extends JpaRepository<ComputersEntity,Long> {
+    @Query(value="select * from computers where model = ?1",nativeQuery = true)
+    List<ComputersEntity> findByModel2(String model);
+
+    @Query(value = "select * from computers  where model like '%?1%'",nativeQuery = true)
+    List<ComputersEntity> findByModelContaining2(String model);
+
+//    @Query(value="select * from computers where model = :model",nativeQuery = true)
+//    List<ComputersEntity> findByModel2(@Param("model") String model);
+
     //select * from computers where model = ?1
     List<ComputersEntity> findByModelIgnoreCase(String model);
 
