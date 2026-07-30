@@ -23,3 +23,10 @@ values
 ('The Great Gatsby', 10.99, '352352323'),
 ('To Kill a Mockingbird', 7.99, '3463463463'),
 ('1984', 8.99, '234234234');
+
+insert into persons(name, email)
+values
+('Arif', 'Arif@gmail.com'),
+('Nihat', 'nihat@gmail.com'),
+('Teymur', 'teymur@gmail.com'),
+('Sevin', 'sevin@gmail.com');
