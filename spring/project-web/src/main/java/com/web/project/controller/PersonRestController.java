@@ -28,7 +28,7 @@ public class PersonRestController {
     }
 
     @GetMapping("/pagination")
-    public ListAllPersonEntity findAllPagination(Pageable pageable) {
+    public ListAllPersonEntity findAllPagination(@RequestParam String shelf, Pageable pageable) {
         return personService.findAllPagination(pageable);
     }
 

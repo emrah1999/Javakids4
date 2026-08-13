@@ -50,3 +50,15 @@ FROM (
     UNION SELECT 91 UNION SELECT 92 UNION SELECT 93 UNION SELECT 94 UNION SELECT 95
     UNION SELECT 96 UNION SELECT 97 UNION SELECT 98 UNION SELECT 99 UNION SELECT 100
 ) AS numbers;
+
+insert into customers(name,email) values
+('Nihat','nihat@gmail.com'),
+('Deniz','deniz@gmail.com');
+
+insert into profiles(address,age,customer_id) values
+('Baku',14,1),
+('Nabran',15,2);
+
+insert into orders(customer_id,price) values
+(1,10.99),
+(1,7.99);
