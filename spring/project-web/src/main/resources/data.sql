@@ -62,3 +62,16 @@ insert into profiles(address,age,customer_id) values
 insert into orders(customer_id,price) values
 (1,10.99),
 (1,7.99);
+
+insert into teachers(name,subject) values
+('Nihat','Tairx'),
+('Deniz','Ana dili');
+
+insert into students(name,age) values
+('Teymur',14),
+('Arif',12);
+
+insert into students_teachers(teacher_id,student_id) values
+(1,2),
+(2,2),
+(1,1);
