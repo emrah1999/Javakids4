@@ -22,7 +22,7 @@ public class CustomerEntity {
     @JsonManagedReference
     private ProfileEntity profile;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY)
     @JsonManagedReference
     private List<OrderEntity> orders;
 }
