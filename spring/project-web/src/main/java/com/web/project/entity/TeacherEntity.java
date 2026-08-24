@@ -17,6 +17,8 @@ public class TeacherEntity {
 
     private String  subject;
 
+    private Double salary;
+
     @ManyToMany
     @JoinTable(name="students_teachers",
     joinColumns = @JoinColumn(name="teacher_id"),
