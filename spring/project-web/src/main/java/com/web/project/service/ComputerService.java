@@ -1,6 +1,8 @@
 package com.web.project.service;
 
 import com.web.project.entity.ComputersEntity;
+import com.web.project.exception.MyException;
+import com.web.project.exception.NotFoundException;
 import com.web.project.repository.ComputerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -60,7 +62,7 @@ public class ComputerService {
               Long say=computerRepository.count();
 
         }else{
-            throw new RuntimeException("Computer not found with id: "+id);
+            throw new MyException("Computer not found with id: "+id,"ComputerService.update");
         }
     }
 
@@ -69,7 +71,7 @@ public class ComputerService {
         if (existingComputerOptional.isPresent()){
             return existingComputerOptional.get();
         }else{
-            throw new RuntimeException("Computer not found with id: "+id);
+            throw new NotFoundException("Computer not found with id: "+id,"ComputerService.getById");
         }
 
     }
@@ -79,7 +81,7 @@ public class ComputerService {
         if(existingComputerOptional.isPresent()){
             computerRepository.deleteById(id);
         }else{
-            throw new RuntimeException("Computer not found with id: "+id);
+            throw new MyException("Computer not found with id: "+id,"ComputerService.delete");
         }
     }
 }
