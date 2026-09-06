@@ -1,5 +1,6 @@
 package com.library.book.request;
 
+import com.library.book.customValidation.PublishDateLimit;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
@@ -29,7 +30,7 @@ public class BookAddRequestDTO {
     private Integer pageCount;
 
     @NotNull(message = "Kitab buraxilish tarixi bosh ola bilmez")
-    @Past(message = "Kitab buraxilish tarixi gecerli tarix olmalidir")
+    @PublishDateLimit(message = "Kitab araligi duzgun deyil")
     private LocalDate publishDate;
 
     private String username;
