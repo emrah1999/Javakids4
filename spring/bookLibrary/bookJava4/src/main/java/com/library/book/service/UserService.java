@@ -15,6 +15,8 @@ public class UserService {
     public void addUser(RequestUserAddDTO requestUserAddDTO) {
         UserEntity user =new UserEntity();
         modelMapper.map(requestUserAddDTO,user);
+        user.setPassword("{noop}"+requestUserAddDTO.getPassword());
+        user.setEnabled(1);
         userRepository.save(user);
     }
 }

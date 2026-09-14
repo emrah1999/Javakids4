@@ -59,15 +59,15 @@ public class MyProjectExceptionHandler {
     }
 
 
-    @ExceptionHandler(value = {Exception.class})
-    @ResponseStatus(org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR)
-    public ErrorResponseDto handleException(Exception ex){
-        ErrorResponseDto errorResponse =new ErrorResponseDto();
-        errorResponse.setStatus(500);
-        errorResponse.setMessage("Xeta baş verdi. Zəhmət olmasa birazdan yoxlayın");
-        errorResponse.setInternalMessage(ex.getMessage());
-        return errorResponse;
-    }
+//    @ExceptionHandler(value = {Exception.class})
+//    @ResponseStatus(org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR)
+//    public ErrorResponseDto handleException(Exception ex){
+//        ErrorResponseDto errorResponse =new ErrorResponseDto();
+//        errorResponse.setStatus(500);
+//        errorResponse.setMessage("Xeta baş verdi. Zəhmət olmasa birazdan yoxlayın");
+//        errorResponse.setInternalMessage(ex.getMessage());
+//        return errorResponse;
+//    }
 
 
 

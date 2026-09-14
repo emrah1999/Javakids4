@@ -1,172 +1,20 @@
-2026-09-10T21:38:43.996+04:00  INFO 3436 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 3436 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
-2026-09-10T21:38:44.033+04:00  INFO 3436 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
-2026-09-10T21:38:48.537+04:00  INFO 3436 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-10T21:38:48.802+04:00  INFO 3436 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 2 JPA repository interfaces.
-2026-09-10T21:38:51.296+04:00  INFO 3436 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-10T21:38:51.385+04:00  INFO 3436 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-10T21:38:51.385+04:00  INFO 3436 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-09-10T21:38:51.685+04:00  INFO 3436 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-10T21:38:51.686+04:00  INFO 3436 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7306 ms
-2026-09-10T21:38:52.063+04:00 ERROR 3436 --- [book] [main] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@5a07e868
-2026-09-10T21:38:52.076+04:00  WARN 3436 --- [book] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-2026-09-10T21:38:52.089+04:00  INFO 3436 --- [book] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2026-09-10T21:38:52.165+04:00  INFO 3436 --- [book] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-09-10T21:38:52.273+04:00 ERROR 3436 --- [book] [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
-	at com.library.book.BookApplication.main(BookApplication.java:10) ~[classes/:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 10 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 20 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 33 common frames omitted
-Caused by: java.lang.RuntimeException: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at com.zaxxer.hikari.HikariConfig.setDriverClassName(HikariConfig.java:514) ~[HikariCP-6.3.1.jar:na]
-	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperty.set(DataSourceBuilder.java:478) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperties.set(DataSourceBuilder.java:370) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:185) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:67) ~[spring-boot-autoconfigure-3.5.4.jar:3.5.4]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:127) ~[spring-boot-autoconfigure-3.5.4.jar:3.5.4]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 36 common frames omitted
-
-2026-09-10T21:39:50.620+04:00  INFO 26132 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 26132 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
-2026-09-10T21:39:50.645+04:00  INFO 26132 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
-2026-09-10T21:39:59.649+04:00  INFO 26132 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-10T21:40:00.543+04:00  INFO 26132 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 800 ms. Found 2 JPA repository interfaces.
-2026-09-10T21:40:07.156+04:00  INFO 26132 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-10T21:40:07.368+04:00  INFO 26132 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-10T21:40:07.369+04:00  INFO 26132 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-09-10T21:40:08.686+04:00  INFO 26132 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-10T21:40:08.689+04:00  INFO 26132 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17315 ms
-2026-09-10T21:40:09.530+04:00 ERROR 26132 --- [book] [main] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@5a07e868
-2026-09-10T21:40:09.547+04:00  WARN 26132 --- [book] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-2026-09-10T21:40:09.595+04:00  INFO 26132 --- [book] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2026-09-10T21:40:09.727+04:00  INFO 26132 --- [book] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-09-10T21:40:09.927+04:00 ERROR 26132 --- [book] [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
-	at com.library.book.BookApplication.main(BookApplication.java:10) ~[classes/:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 10 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 20 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.9.jar:6.2.9]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 33 common frames omitted
-Caused by: java.lang.RuntimeException: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-	at com.zaxxer.hikari.HikariConfig.setDriverClassName(HikariConfig.java:514) ~[HikariCP-6.3.1.jar:na]
-	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperty.set(DataSourceBuilder.java:478) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperties.set(DataSourceBuilder.java:370) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:185) ~[spring-boot-3.5.4.jar:3.5.4]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:67) ~[spring-boot-autoconfigure-3.5.4.jar:3.5.4]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:127) ~[spring-boot-autoconfigure-3.5.4.jar:3.5.4]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.9.jar:6.2.9]
-	... 36 common frames omitted
-
-2026-09-10T21:41:32.343+04:00  INFO 18268 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 18268 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
-2026-09-10T21:41:32.353+04:00  INFO 18268 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
-2026-09-10T21:41:39.588+04:00  INFO 18268 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-10T21:41:40.093+04:00  INFO 18268 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 416 ms. Found 2 JPA repository interfaces.
-2026-09-10T21:41:44.421+04:00  INFO 18268 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-10T21:41:44.511+04:00  INFO 18268 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-10T21:41:44.513+04:00  INFO 18268 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-09-10T21:41:44.978+04:00  INFO 18268 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-10T21:41:44.982+04:00  INFO 18268 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12336 ms
-2026-09-10T21:41:46.306+04:00  INFO 18268 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-10T21:41:46.868+04:00  INFO 18268 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
-2026-09-10T21:41:47.169+04:00  INFO 18268 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-10T21:41:49.420+04:00  INFO 18268 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-10T21:41:49.752+04:00  INFO 18268 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-10T21:41:53.144+04:00  INFO 18268 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@160c7c42
-2026-09-10T21:41:53.150+04:00  INFO 18268 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-10T21:41:53.860+04:00  INFO 18268 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-09-14T21:37:34.669+04:00  INFO 24192 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 24192 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
+2026-09-14T21:37:34.721+04:00  INFO 24192 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
+2026-09-14T21:37:42.781+04:00  INFO 24192 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T21:37:43.385+04:00  INFO 24192 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 527 ms. Found 2 JPA repository interfaces.
+2026-09-14T21:37:48.392+04:00  INFO 24192 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-14T21:37:48.521+04:00  INFO 24192 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T21:37:48.523+04:00  INFO 24192 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-09-14T21:37:48.992+04:00  INFO 24192 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-14T21:37:48.997+04:00  INFO 24192 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13793 ms
+2026-09-14T21:37:50.966+04:00  INFO 24192 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-14T21:37:51.688+04:00  INFO 24192 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-09-14T21:37:52.093+04:00  INFO 24192 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-14T21:37:54.423+04:00  INFO 24192 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T21:37:54.658+04:00  INFO 24192 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T21:37:57.156+04:00  INFO 24192 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5af40e45
+2026-09-14T21:37:57.165+04:00  INFO 24192 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T21:37:57.877+04:00  INFO 24192 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.4.4
@@ -174,37 +22,43 @@ Caused by: java.lang.RuntimeException: Failed to load driver class com.mysql.cj.
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-10T21:41:59.527+04:00  INFO 18268 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-10T21:42:02.232+04:00  INFO 18268 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-10T21:42:04.759+04:00  WARN 18268 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-10T21:42:07.211+04:00  INFO 18268 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-10T21:42:07.314+04:00  INFO 18268 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 37.3 seconds (process running for 40.368)
-2026-09-10T21:42:26.096+04:00  INFO 18268 --- [book] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-10T21:42:26.099+04:00  INFO 18268 --- [book] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-10T21:42:26.103+04:00  INFO 18268 --- [book] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-09-10T21:42:32.052+04:00  INFO 18268 --- [book] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 3386 ms
-2026-09-10T21:43:20.910+04:00  INFO 18268 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-10T21:43:20.931+04:00  INFO 18268 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-10T21:43:20.949+04:00  INFO 18268 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-10T21:43:20.960+04:00  INFO 18268 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-10T21:43:20.991+04:00  INFO 18268 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-09-10T22:07:20.560+04:00  INFO 12564 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 12564 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
-2026-09-10T22:07:20.574+04:00  INFO 12564 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
-2026-09-10T22:07:27.555+04:00  INFO 12564 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-10T22:07:27.975+04:00  INFO 12564 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 347 ms. Found 2 JPA repository interfaces.
-2026-09-10T22:07:31.130+04:00  INFO 12564 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-10T22:07:31.198+04:00  INFO 12564 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-10T22:07:31.199+04:00  INFO 12564 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-09-10T22:07:31.452+04:00  INFO 12564 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-10T22:07:31.456+04:00  INFO 12564 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10479 ms
-2026-09-10T22:07:32.641+04:00  INFO 12564 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-10T22:07:32.984+04:00  INFO 12564 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
-2026-09-10T22:07:33.140+04:00  INFO 12564 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-10T22:07:34.265+04:00  INFO 12564 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-10T22:07:34.347+04:00  INFO 12564 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-10T22:07:36.569+04:00  INFO 12564 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@99c3cee
-2026-09-10T22:07:36.574+04:00  INFO 12564 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-10T22:07:37.052+04:00  INFO 12564 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-09-14T21:38:02.648+04:00  INFO 24192 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T21:38:03.320+04:00  INFO 24192 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:38:06.893+04:00  WARN 24192 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T21:38:09.004+04:00  INFO 24192 --- [book] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-14T21:38:09.006+04:00  WARN 24192 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-14T21:38:09.900+04:00  WARN 24192 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:38:09.903+04:00  WARN 24192 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:38:09.948+04:00  WARN 24192 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:38:09.961+04:00  WARN 24192 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:38:12.273+04:00  INFO 24192 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-14T21:38:12.326+04:00  INFO 24192 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 41.66 seconds (process running for 46.492)
+2026-09-14T21:41:16.730+04:00  INFO 24192 --- [book] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T21:41:16.732+04:00  INFO 24192 --- [book] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T21:41:16.746+04:00  INFO 24192 --- [book] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2026-09-14T21:41:41.300+04:00  WARN 24192 --- [book] [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [290] milliseconds.
+2026-09-14T21:50:01.685+04:00  INFO 24192 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-14T21:50:01.738+04:00  INFO 24192 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-14T21:50:01.758+04:00  INFO 24192 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:50:01.767+04:00  INFO 24192 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-14T21:50:01.833+04:00  INFO 24192 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T21:50:29.914+04:00  INFO 12864 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 12864 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
+2026-09-14T21:50:29.940+04:00  INFO 12864 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
+2026-09-14T21:50:39.119+04:00  INFO 12864 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T21:50:39.948+04:00  INFO 12864 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 754 ms. Found 2 JPA repository interfaces.
+2026-09-14T21:50:44.944+04:00  INFO 12864 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-14T21:50:45.024+04:00  INFO 12864 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T21:50:45.028+04:00  INFO 12864 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-09-14T21:50:45.416+04:00  INFO 12864 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-14T21:50:45.418+04:00  INFO 12864 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14778 ms
+2026-09-14T21:50:46.653+04:00  INFO 12864 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-14T21:50:47.044+04:00  INFO 12864 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-09-14T21:50:47.283+04:00  INFO 12864 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-14T21:50:49.002+04:00  INFO 12864 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T21:50:49.098+04:00  INFO 12864 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T21:50:50.530+04:00  INFO 12864 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35af52dc
+2026-09-14T21:50:50.535+04:00  INFO 12864 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T21:50:51.042+04:00  INFO 12864 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.4.4
@@ -212,23 +66,190 @@ Caused by: java.lang.RuntimeException: Failed to load driver class com.mysql.cj.
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-10T22:07:40.490+04:00  INFO 12564 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-10T22:07:40.892+04:00  INFO 12564 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-10T22:07:42.969+04:00  WARN 12564 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-10T22:07:45.746+04:00  WARN 12564 --- [book] [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 9018aac8-c71f-41eb-a860-ec220802a81e
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-09-10T22:07:45.784+04:00  INFO 12564 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-09-10T22:07:46.669+04:00  INFO 12564 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-10T22:07:46.706+04:00  INFO 12564 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 28.716 seconds (process running for 31.369)
-2026-09-10T22:07:55.840+04:00  INFO 12564 --- [book] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-10T22:07:55.841+04:00  INFO 12564 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-10T22:07:55.845+04:00  INFO 12564 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-09-10T22:16:15.570+04:00  INFO 12564 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-10T22:16:15.578+04:00  INFO 12564 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-10T22:16:15.586+04:00  INFO 12564 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-10T22:16:15.590+04:00  INFO 12564 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-10T22:16:15.604+04:00  INFO 12564 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T21:50:53.979+04:00  INFO 12864 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T21:50:54.153+04:00  INFO 12864 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:50:56.252+04:00  WARN 12864 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T21:50:57.384+04:00  INFO 12864 --- [book] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-14T21:50:57.385+04:00  WARN 12864 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-14T21:50:58.148+04:00  WARN 12864 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:50:58.150+04:00  WARN 12864 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:50:58.160+04:00  WARN 12864 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:50:58.183+04:00  WARN 12864 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:51:00.270+04:00  INFO 12864 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-14T21:51:00.307+04:00  INFO 12864 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 35.081 seconds (process running for 38.614)
+2026-09-14T21:51:07.912+04:00  INFO 12864 --- [book] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T21:51:07.913+04:00  INFO 12864 --- [book] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T21:51:07.916+04:00  INFO 12864 --- [book] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-09-14T21:53:31.788+04:00  INFO 12864 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-14T21:53:31.819+04:00  INFO 12864 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-14T21:53:31.830+04:00  INFO 12864 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:53:31.847+04:00  INFO 12864 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-14T21:53:31.880+04:00  INFO 12864 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T21:53:44.800+04:00  INFO 25748 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 25748 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
+2026-09-14T21:53:44.812+04:00  INFO 25748 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
+2026-09-14T21:53:49.592+04:00  INFO 25748 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T21:53:49.835+04:00  INFO 25748 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 2 JPA repository interfaces.
+2026-09-14T21:53:52.817+04:00  INFO 25748 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-14T21:53:52.911+04:00  INFO 25748 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T21:53:52.913+04:00  INFO 25748 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-09-14T21:53:53.262+04:00  INFO 25748 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-14T21:53:53.263+04:00  INFO 25748 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8194 ms
+2026-09-14T21:53:54.201+04:00  INFO 25748 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-14T21:53:54.424+04:00  INFO 25748 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-09-14T21:53:54.569+04:00  INFO 25748 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-14T21:53:55.951+04:00  INFO 25748 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T21:53:56.152+04:00  INFO 25748 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T21:53:57.512+04:00  INFO 25748 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17ae13d5
+2026-09-14T21:53:57.517+04:00  INFO 25748 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T21:53:57.824+04:00  INFO 25748 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-14T21:54:01.126+04:00  INFO 25748 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T21:54:01.287+04:00  INFO 25748 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:54:03.433+04:00  WARN 25748 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T21:54:04.794+04:00  INFO 25748 --- [book] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-14T21:54:04.795+04:00  WARN 25748 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-14T21:54:05.294+04:00  WARN 25748 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:54:05.297+04:00  WARN 25748 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:54:05.309+04:00  WARN 25748 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:54:05.319+04:00  WARN 25748 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:54:07.397+04:00  INFO 25748 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-14T21:54:07.429+04:00  INFO 25748 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 24.332 seconds (process running for 26.315)
+2026-09-14T21:54:23.268+04:00  INFO 25748 --- [book] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T21:54:23.270+04:00  INFO 25748 --- [book] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T21:54:23.274+04:00  INFO 25748 --- [book] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-09-14T21:55:33.313+04:00  INFO 25748 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-14T21:55:33.362+04:00  INFO 25748 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-14T21:55:33.379+04:00  INFO 25748 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:55:33.386+04:00  INFO 25748 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-14T21:55:33.409+04:00  INFO 25748 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T21:55:50.484+04:00  INFO 23528 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 23528 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
+2026-09-14T21:55:50.493+04:00  INFO 23528 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
+2026-09-14T21:55:55.339+04:00  INFO 23528 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T21:55:55.579+04:00  INFO 23528 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 2 JPA repository interfaces.
+2026-09-14T21:55:58.595+04:00  INFO 23528 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-14T21:55:58.684+04:00  INFO 23528 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T21:55:58.686+04:00  INFO 23528 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-09-14T21:55:59.050+04:00  INFO 23528 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-14T21:55:59.051+04:00  INFO 23528 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8291 ms
+2026-09-14T21:56:00.199+04:00  INFO 23528 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-14T21:56:00.503+04:00  INFO 23528 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-09-14T21:56:00.651+04:00  INFO 23528 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-14T21:56:02.218+04:00  INFO 23528 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T21:56:02.327+04:00  INFO 23528 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T21:56:04.144+04:00  INFO 23528 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2047adea
+2026-09-14T21:56:04.154+04:00  INFO 23528 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T21:56:04.578+04:00  INFO 23528 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-14T21:56:08.244+04:00  INFO 23528 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T21:56:08.389+04:00  INFO 23528 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:56:10.927+04:00  WARN 23528 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T21:56:12.375+04:00  INFO 23528 --- [book] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-14T21:56:12.377+04:00  WARN 23528 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-14T21:56:12.965+04:00  WARN 23528 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:56:12.970+04:00  WARN 23528 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:56:13.016+04:00  WARN 23528 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:56:13.027+04:00  WARN 23528 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:56:16.279+04:00  INFO 23528 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-14T21:56:16.400+04:00  INFO 23528 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 28.019 seconds (process running for 30.677)
+2026-09-14T21:56:16.797+04:00  INFO 23528 --- [book] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T21:56:16.800+04:00  INFO 23528 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T21:56:16.807+04:00  INFO 23528 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-09-14T21:57:56.592+04:00  INFO 23528 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-14T21:57:56.642+04:00  INFO 23528 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-14T21:57:56.662+04:00  INFO 23528 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:57:56.670+04:00  INFO 23528 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-14T21:57:56.726+04:00  INFO 23528 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T21:58:15.183+04:00  INFO 27208 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 27208 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
+2026-09-14T21:58:15.196+04:00  INFO 27208 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
+2026-09-14T21:58:20.870+04:00  INFO 27208 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T21:58:21.163+04:00  INFO 27208 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 247 ms. Found 2 JPA repository interfaces.
+2026-09-14T21:58:25.365+04:00  INFO 27208 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-14T21:58:25.444+04:00  INFO 27208 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T21:58:25.447+04:00  INFO 27208 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-09-14T21:58:25.852+04:00  INFO 27208 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-14T21:58:25.854+04:00  INFO 27208 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10220 ms
+2026-09-14T21:58:27.715+04:00  INFO 27208 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-14T21:58:28.090+04:00  INFO 27208 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-09-14T21:58:28.381+04:00  INFO 27208 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-14T21:58:31.425+04:00  INFO 27208 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T21:58:31.578+04:00  INFO 27208 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T21:58:33.248+04:00  INFO 27208 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ff26c9
+2026-09-14T21:58:33.257+04:00  INFO 27208 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T21:58:33.822+04:00  INFO 27208 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-14T21:58:37.646+04:00  INFO 27208 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T21:58:37.841+04:00  INFO 27208 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T21:58:41.727+04:00  WARN 27208 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T21:58:44.646+04:00  INFO 27208 --- [book] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-14T21:58:44.649+04:00  WARN 27208 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-14T21:58:45.686+04:00  WARN 27208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:58:45.687+04:00  WARN 27208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:58:45.702+04:00  WARN 27208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:58:45.710+04:00  WARN 27208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T21:58:47.705+04:00  INFO 27208 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-14T21:58:47.750+04:00  INFO 27208 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 35.931 seconds (process running for 38.301)
+2026-09-14T21:59:01.793+04:00  INFO 27208 --- [book] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T21:59:01.794+04:00  INFO 27208 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T21:59:01.817+04:00  INFO 27208 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2026-09-14T22:04:41.461+04:00  INFO 27208 --- [book] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-14T22:04:41.497+04:00  INFO 27208 --- [book] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-14T22:04:41.506+04:00  INFO 27208 --- [book] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T22:04:41.512+04:00  INFO 27208 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-14T22:04:41.534+04:00  INFO 27208 --- [book] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T22:05:01.718+04:00  INFO 1208 --- [book] [main] com.library.book.BookApplication         : Starting BookApplication using Java 23.0.1 with PID 1208 (C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4\target\classes started by Emrah in C:\Users\Emrah\Desktop\Java kids\javakids4\spring\bookLibrary\bookJava4)
+2026-09-14T22:05:01.735+04:00  INFO 1208 --- [book] [main] com.library.book.BookApplication         : The following 1 profile is active: "production"
+2026-09-14T22:05:07.801+04:00  INFO 1208 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T22:05:08.198+04:00  INFO 1208 --- [book] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 343 ms. Found 2 JPA repository interfaces.
+2026-09-14T22:05:13.306+04:00  INFO 1208 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-14T22:05:13.419+04:00  INFO 1208 --- [book] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T22:05:13.422+04:00  INFO 1208 --- [book] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-09-14T22:05:13.855+04:00  INFO 1208 --- [book] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-14T22:05:13.857+04:00  INFO 1208 --- [book] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11706 ms
+2026-09-14T22:05:15.101+04:00  INFO 1208 --- [book] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-14T22:05:15.454+04:00  INFO 1208 --- [book] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-09-14T22:05:15.635+04:00  INFO 1208 --- [book] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-14T22:05:17.175+04:00  INFO 1208 --- [book] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T22:05:17.335+04:00  INFO 1208 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T22:05:18.999+04:00  INFO 1208 --- [book] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47e60b71
+2026-09-14T22:05:19.006+04:00  INFO 1208 --- [book] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T22:05:19.591+04:00  INFO 1208 --- [book] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-14T22:05:23.931+04:00  INFO 1208 --- [book] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T22:05:24.179+04:00  INFO 1208 --- [book] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T22:05:27.686+04:00  WARN 1208 --- [book] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T22:05:29.442+04:00  INFO 1208 --- [book] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-14T22:05:29.443+04:00  WARN 1208 --- [book] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-14T22:05:30.366+04:00  WARN 1208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T22:05:30.375+04:00  WARN 1208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T22:05:30.398+04:00  WARN 1208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T22:05:30.411+04:00  WARN 1208 --- [book] [main] .c.a.w.b.WebSecurityFilterChainValidator : Usage of authorizeRequests is deprecated. Please use authorizeHttpRequests in the configuration
+2026-09-14T22:05:32.453+04:00  INFO 1208 --- [book] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-14T22:05:32.501+04:00  INFO 1208 --- [book] [main] com.library.book.BookApplication         : Started BookApplication in 34.175 seconds (process running for 36.691)
+2026-09-14T22:07:47.334+04:00  INFO 1208 --- [book] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T22:07:47.335+04:00  INFO 1208 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T22:07:47.340+04:00  INFO 1208 --- [book] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-14T22:07:52.872+04:00  INFO 1208 --- [book] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 3805 ms

@@ -16,5 +16,6 @@ public class UserEntity {
 
     private String password;
 
+    @Column(nullable = false, columnDefinition = "TINYINT(1) DEFAULT 1")
     private Integer enabled;
 }

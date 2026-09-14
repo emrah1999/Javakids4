@@ -13,6 +13,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -49,12 +50,14 @@ public class BookRestController {
 
             )
     })
+    @PreAuthorize(value = "hasRole('ROLE_ADD_BOOK')")
     public void addBook(@RequestBody @Valid BookAddRequestDTO bookAddRequestDTO, BindingResult bindingResult) {
         if(bindingResult.hasErrors()){
             throw new MyValidationException("Melumatlar dtam deyil","Validation error",bindingResult);
         }
         bookService.saveBook(bookAddRequestDTO);
     }
+    @PreAuthorize(value = "hasRole('ROLE_GET_BOOKS')")
     @GetMapping
     public ListBookResponseDTO getAll(
             @RequestParam(defaultValue = "0") int pageNumber,
