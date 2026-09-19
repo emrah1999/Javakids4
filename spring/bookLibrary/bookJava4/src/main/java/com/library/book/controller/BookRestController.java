@@ -50,7 +50,7 @@ public class BookRestController {
 
             )
     })
-    @PreAuthorize(value = "hasRole('ROLE_ADD_BOOK')")
+    @PreAuthorize(value = "hasRole('ROLE_ADD_BOOKS')")
     public void addBook(@RequestBody @Valid BookAddRequestDTO bookAddRequestDTO, BindingResult bindingResult) {
         if(bindingResult.hasErrors()){
             throw new MyValidationException("Melumatlar dtam deyil","Validation error",bindingResult);
@@ -68,18 +68,20 @@ public class BookRestController {
     }
 
 
-
+    @PreAuthorize(value = "hasRole('ROLE_GET_BOOKS')")
     @GetMapping("/{id}")
     public BookResponseDTO getById(@PathVariable Long id){
         return bookService.getById(id);
     }
 
 
+    @PreAuthorize(value = "hasRole('ROLE_DELETE_BOOKS')")
     @DeleteMapping("/{id}")
     public void deleteBook(@PathVariable Long id) {
         bookService.delete(id);
     }
 
+    @PreAuthorize(value = "hasRole('ROLE_UPDATE_BOOKS')")
     @PutMapping("/{id}")
     public BookResponseDTO updateBook(
             @PathVariable Long id,
