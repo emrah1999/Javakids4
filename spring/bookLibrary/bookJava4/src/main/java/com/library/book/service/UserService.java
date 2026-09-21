@@ -4,6 +4,7 @@ import com.library.book.entity.RoleEntity;
 import com.library.book.entity.UserEntity;
 import com.library.book.repository.AuthoritiesRepository;
 import com.library.book.repository.UserRepository;
+import com.library.book.repository.UserRolesRepository;
 import com.library.book.request.RequestUserAddDTO;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -26,14 +27,22 @@ import java.util.stream.Collectors;
 public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
-    private final AuthoritiesRepository authoritiesRepository;
+    private final UserRolesRepository userRolesRepository;
     public void addUser(RequestUserAddDTO requestUserAddDTO) {
         UserEntity user =new UserEntity();
         modelMapper.map(requestUserAddDTO,user);
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         String bcrPassword = encoder.encode(requestUserAddDTO.getPassword());
-        user.setPassword(bcrPassword);        user.setEnabled(1);
+        user.setPassword(bcrPassword);
+        user.setType(requestUserAddDTO.getType());
+        user.setEnabled(1);
         userRepository.save(user);
+        if(requestUserAddDTO.getType()==1){
+            userRolesRepository.addLibrarianRole(user.getId());
+        }else{
+            userRolesRepository.addStudentRole(user.getId());
+        }
+
     }
 
     @Override

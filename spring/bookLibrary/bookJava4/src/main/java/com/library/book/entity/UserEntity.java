@@ -21,6 +21,10 @@ public class UserEntity {
     @Column(nullable = false)
     private Integer enabled;
 
+    private String name;
+
+    private Integer type; // 1 librarian, 2 student
+
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),

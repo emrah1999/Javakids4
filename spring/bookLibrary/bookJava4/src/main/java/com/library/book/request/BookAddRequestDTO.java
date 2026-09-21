@@ -33,8 +33,6 @@ public class BookAddRequestDTO {
     @PublishDateLimit(message = "Kitab araligi duzgun deyil")
     private LocalDate publishDate;
 
-    private String username;
-
     @NotNull(message = "Kitab qiymeti bosh ola bilmez")
     @DecimalMin(value = "0.01", message = "Kitab qiymeti en az 0.01 olmalidir")
     @DecimalMax(value = "1000.00", message = "Kitab qiymeti en cox 1000.00 olmalidir")

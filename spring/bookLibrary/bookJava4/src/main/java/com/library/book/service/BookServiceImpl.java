@@ -11,6 +11,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -26,7 +27,9 @@ public class BookServiceImpl implements BookService {
     @Override
     public void saveBook(BookAddRequestDTO bookAddRequestDTO) {
         BookEntity bookEntity = new BookEntity();
+        String username= SecurityContextHolder.getContext().getAuthentication().getName();
         modelMapper.map(bookAddRequestDTO, bookEntity);
+        bookEntity.setUsername(username);
         bookRepository.save(bookEntity);
     }
     @Override

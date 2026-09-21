@@ -17,4 +17,8 @@ public class RoleEntity {
 
     private String name;
 
+    private Integer librarian; // 0 or 1
+
+    private Integer student; // 0 or 1
+
 }
