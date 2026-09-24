@@ -1,4 +1,4 @@
-package com.library.book.config;
+package com.emrah.ecommerce.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
@@ -6,9 +6,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 
-@Profile("development")
 @Configuration
 @OpenAPIDefinition(
         info = @Info(title = "My API", version = "1.0"),
