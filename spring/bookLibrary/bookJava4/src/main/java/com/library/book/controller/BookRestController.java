@@ -2,6 +2,7 @@ package com.library.book.controller;
 
 import com.library.book.exception.MyValidationException;
 import com.library.book.request.BookAddRequestDTO;
+import com.library.book.request.BookFilterRequestDTO;
 import com.library.book.response.BookResponseDTO;
 import com.library.book.response.ListBookResponseDTO;
 import com.library.book.service.BookService;
@@ -13,6 +14,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -72,6 +74,12 @@ public class BookRestController {
     @GetMapping("/{id}")
     public BookResponseDTO getById(@PathVariable Long id){
         return bookService.getById(id);
+    }
+
+    @PreAuthorize(value = "hasRole('ROLE_GET_BOOKS')")
+    @GetMapping("/filter")
+    public Page<BookResponseDTO> filter(BookFilterRequestDTO request){
+        return bookService.filter(request);
     }
 
 

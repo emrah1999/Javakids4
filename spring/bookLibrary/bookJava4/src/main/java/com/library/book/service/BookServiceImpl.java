@@ -4,13 +4,17 @@ import com.library.book.entity.BookEntity;
 import com.library.book.exception.NotFoundException;
 import com.library.book.repository.BookRepository;
 import com.library.book.request.BookAddRequestDTO;
+import com.library.book.request.BookFilterRequestDTO;
 import com.library.book.response.BookResponseDTO;
 import com.library.book.response.ListBookResponseDTO;
+import com.library.book.spectification.BookSpecification;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
@@ -54,6 +58,31 @@ public class BookServiceImpl implements BookService {
         response.setLast(page.isLast());
 
         return response;
+    }
+
+    @Override
+    public Page<BookResponseDTO> filter(BookFilterRequestDTO req) {
+        Sort sort = Sort.by(
+                req.getSortDir().equalsIgnoreCase("desc")
+                        ? Sort.Direction.DESC
+                        : Sort.Direction.ASC,
+                req.getSortField()
+        );
+        //order by price asc
+
+        Pageable pageable = PageRequest.of(
+                req.getPage(),
+                req.getSize(),
+                sort
+        );
+
+        Specification<BookEntity> spec = BookSpecification.filter(req);
+        Page<BookEntity> books=bookRepository.findAll(spec,pageable);
+        return books.map(book->{
+            BookResponseDTO dto=new BookResponseDTO();
+            modelMapper.map(book,dto);
+            return dto;
+        });
     }
 
 
