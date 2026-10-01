@@ -21,6 +21,7 @@ public class BookEntity {
     private Integer quantity;
 
     private Integer pageCount;
+    private String barcode;
 
     private LocalDate publishDate;
 
