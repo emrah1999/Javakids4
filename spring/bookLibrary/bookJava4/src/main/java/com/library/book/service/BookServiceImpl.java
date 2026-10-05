@@ -1,9 +1,11 @@
 package com.library.book.service;
 
 import com.library.book.entity.BookEntity;
+import com.library.book.exception.MyException;
 import com.library.book.exception.NotFoundException;
 import com.library.book.repository.BookRepository;
 import com.library.book.request.BookAddRequestDTO;
+import com.library.book.request.BookEditRequestDTO;
 import com.library.book.request.BookFilterRequestDTO;
 import com.library.book.response.BookResponseDTO;
 import com.library.book.response.ListBookResponseDTO;
@@ -111,11 +113,15 @@ public class BookServiceImpl implements BookService {
 
 
     @Override
-    public BookResponseDTO update(Long id, BookAddRequestDTO request) {
+    public BookResponseDTO update(Long id, BookEditRequestDTO request) {
 
         BookEntity bookEntity= bookRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Kitab Tapılmadı", "Not found"));
 
+        Optional<BookEntity> bookBarcode = bookRepository.findByBarcode(request.getBarcode());
+        if(bookBarcode.isPresent() && bookBarcode.get().getId()!=id){
+              throw new MyException("Barcode bashqa kitabda mövcuddur", "Validation error");
+        }
 
         modelMapper.map(request, bookEntity);
         BookEntity updatedBook = bookRepository.save(bookEntity);

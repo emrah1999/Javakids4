@@ -1,6 +1,7 @@
 package com.library.book.service;
 
 import com.library.book.request.BookAddRequestDTO;
+import com.library.book.request.BookEditRequestDTO;
 import com.library.book.request.BookFilterRequestDTO;
 import com.library.book.response.BookResponseDTO;
 import com.library.book.response.ListBookResponseDTO;
@@ -16,5 +17,5 @@ public interface BookService {
 
     void delete(Long id);
 
-    BookResponseDTO update(Long id , BookAddRequestDTO request);
+    BookResponseDTO update(Long id , BookEditRequestDTO request);
 }

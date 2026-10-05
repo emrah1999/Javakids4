@@ -2,6 +2,7 @@ package com.library.book.controller;
 
 import com.library.book.exception.MyValidationException;
 import com.library.book.request.BookAddRequestDTO;
+import com.library.book.request.BookEditRequestDTO;
 import com.library.book.request.BookFilterRequestDTO;
 import com.library.book.response.BookResponseDTO;
 import com.library.book.response.ListBookResponseDTO;
@@ -93,7 +94,7 @@ public class BookRestController {
     @PutMapping("/{id}")
     public BookResponseDTO updateBook(
             @PathVariable Long id,
-            @RequestBody @Valid BookAddRequestDTO request,
+            @RequestBody @Valid BookEditRequestDTO request,
             BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {

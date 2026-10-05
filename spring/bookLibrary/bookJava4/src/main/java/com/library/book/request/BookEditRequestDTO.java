@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
-public class BookAddRequestDTO {
+public class BookEditRequestDTO {
     @NotNull(message = "Kitab adi bosh ola bilmez")
     @NotBlank(message = "Kitab adi bosh ola bilmez")
     @Size(min = 2, max = 100, message = "Kitab adi en az 2, en cox 100 simvol olmalidir")
@@ -22,7 +22,6 @@ public class BookAddRequestDTO {
 
     @NotNull(message = "Kitab barkodu bosh ola bilmez")
     @NotBlank(message = "Kitab barkodu bosh ola bilmez")
-    @UniqueBarcode(message = "Bu barkod sistemde movcuddur")
     @Size(min = 4, max = 100, message = "Kitab barkodu en az 4, en cox 100 simvol olmalidir")
     private String barcode;
 
